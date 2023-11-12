@@ -1,0 +1,5 @@
+{{ with .Site.GetPage (.Get 0) }}
+<a href="{{ .Permalink }}" title="{{ .Title }}" target="_blank">
+    {{ .Title }}
+</a>
+{{ end }}

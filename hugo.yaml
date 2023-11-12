@@ -1,0 +1,233 @@
+baseURL: "https://MysticalDream.github.io/"
+title: 幻梦的博客
+paginate: 5
+theme: PaperMod
+languageCode: zh-cn # en-us
+# copyright: "Copyright © 2023 MysticalDream. All Rights Reserved. "
+
+hasCJKLanguage: true #自动检测内容中的中文/日文/韩文语言。这将使得 .Summary 和 .WordCount 对于CJK语言的行为正确。 
+enableRobotsTXT: true #生成robots.txt
+enableEmoji: true # 允许使用 Emoji 表情
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  # minifyOutput: true
+
+defaultContentLanguage: zh
+
+defaultContentLanguageInSubdir: false
+
+# languages:
+#   zh:
+#     languageCode: zh-CN
+#     languageName: Chinese
+#     weight: 1
+#   en:
+#     languageCode: en-US
+#     languageName: English
+#     weight: 2
+#     menu:
+#       main:
+#         - identifier: search
+#           name: 🔍Search
+#           url: search
+#           weight: 20
+#         - identifier: home
+#           name: 🏠Home
+#           url: /
+#           weight: 10
+#         - identifier: posts
+#           name: 📚Article
+#           url: /posts
+#           weight: 30
+#         - identifier: archives
+#           name: ⏱Archive
+#           url: /archives
+#           weight: 40
+#         - identifier: tags
+#           name: 🔖Tag
+#           url: /tags
+#           weight: 50
+#         - identifier: about
+#           name: 🙋🏻‍♂️About
+#           url: /about
+#           weight: 60    
+
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: 幻梦的博客
+  description: "用于学习记录、生活分享的博客"
+  keywords: ["MysticalDream", "博客", "生活","记录","Java","计算机","操作系统","计算机网络"]
+  author: MysticalDream
+  # author: ["Me", "You"] # multiple authors
+  # images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "2006-01-02"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowFullTextinRSS: true
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true #在单个帖子下添加上一篇文章/下一篇文章建议
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+
+  comments: true
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: true
+  VisitCount: true
+
+  ShowLastMod: true #显示文章更新时间
+
+  assets:
+    disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "images/favicon.ico"
+    favicon16x16: "images/favicon-16x16.png"
+    favicon32x32: "images/favicon-32x32.png"
+    apple_touch_icon: "images/apple-touch-icon.png"
+    safari_pinned_tab: "images/android-chrome-192x192.png"
+
+  label:
+    text: "幻梦的博客"
+    icon: images/avatar.jpg
+    # iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: false # needs to be explicitly set
+    title: 青春不散场
+    subtitle: "编程"
+    imageUrl: "images/avatar.jpg"
+    imageWidth: 170
+    imageHeight: 170
+    imageTitle: 
+    buttons:
+      - name: 📚文章
+        url: posts
+      - name: 🔍搜索
+        url: search
+      - name: 🗃️归档
+        url: archives
+
+  # home-info mode
+  homeInfoParams:
+    Title: "幻梦的博客"
+    Content: 👋欢迎来到我的博客
+
+  socialIcons:
+    # - name: twitter
+    #   url: "https://twitter.com/"
+    # - name: stackoverflow
+    #   url: "https://stackoverflow.com"
+    - name: github
+      url: "https://github.com/MysticalDream"
+    - name: rss
+      url: "https://MysticalDream.github.io/index.xml"
+
+  # analytics:
+  #   google:
+  #     SiteVerificationTag: "XYZabc"
+  #   bing:
+  #     SiteVerificationTag: "XYZabc"
+  #   yandex:
+  #     SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: false # hide everywhere but not in structured data
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  # editPost:
+  #   URL: "https://github.com/MysticalDream/mysticaldream.github.io/blob/main/content"
+  #   Text: "提出修改意见" # edit text
+  #   appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: search
+      name: 🔍搜索
+      url: search
+      weight: 20
+    - identifier: home
+      name: 🏠主页
+      url: /
+      weight: 10
+    - identifier: posts
+      name: 📚文章
+      url: /posts
+      weight: 30
+    - identifier: archives
+      name: 🗃️归档
+      url: /archives
+      weight: 40
+    # - identifier: categories
+    #   name: 🧩分类
+    #   url: categories
+    #   weight: 30
+    - identifier: tags
+      name: 🔖标签
+      url: /tags
+      weight: 50
+    - identifier: about
+      name: ℹ️关于
+      url: /about
+      weight: 60
+    # - identifier: links
+    #   name: 🤝友链
+    #   url: links
+    #   weight: 70
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+
+pygmentsUseClasses: true
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true # HUGO 默认转义 Markdown 文件中的 HTML 代码，如需开启的话
+    highlight:
+        # anchorLineNos: true
+        codeFences: true  
+        guessSyntax: true
+        lineNos: true
+        # noClasses: false
+        style: monokai
+        # style: darcula
+
+        # codeFences：代码围栏功能，这个功能一般都要设为 true 的，不然很难看，就是干巴巴的-代码文字，没有颜色。
+        # guessSyntax：猜测语法，这个功能建议设置为 true, 如果你没有设置要显示的语言则会自动匹配。
+        # hl_Lines：高亮的行号，一般这个不设置，因为每个代码块我们可能希望让高亮的地方不一样。
+        # lineNoStart：行号从编号几开始，一般从 1 开始。
+        # lineNos：是否显示行号，我比较喜欢显示，所以我设置的为 true.
+        # lineNumbersInTable：使用表来格式化行号和代码,而不是 标签。这个属性一般设置为 true.
+        # noClasses：使用 class 标签，而不是内嵌的内联样式
