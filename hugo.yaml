@@ -294,7 +294,7 @@ params:
         repo: "MysticalDream/PBlog"
         repoId: "R_kgDOKsZKxQ"
         category: Announcements
-        categoryId: "DIC_kwDOKsZKxc4Ca4oE"
+        categoryId: "DIC_kwDOKsZKxc4Ca4oD"
         lang: "zh-CN"
         mapping: pathname
         reactionsEnabled: "1"
