@@ -1,33 +1,118 @@
-- id: prev_page
-  translation: "上一页"
-
-- id: next_page
-  translation: "下一页"
-
-- id: read_time
-  translation:
-    one : "1 分钟"
-    other: "{{ .Count }} 分钟"
-
-- id: words
-  translation: 
-    one: "字"
-    other: "{{ .Count }} 字"
-
-- id: toc
-  translation: "目录"
-
-- id: translations
-  translation: "语言"
-
-- id: home
-  translation: "🏠主页"
-
-- id: edit_post
-  translation: "编辑"
-
-- id: code_copy
-  translation: "复制"
-
-- id: code_copied
-  translation: "已复制！"
+backToTop:
+  other: 回到顶部
+viewComments:
+  other: 查看评论
+posts:
+  other: 文章
+allSome:
+  other: 所有{{ .Some }}
+tag:
+  other: 标签
+tags:
+  other: 标签
+category:
+  other: 分类
+categories:
+  other: 分类
+more:
+  other: 更多
+selectLanguage:
+  other: 选择语言
+switchTheme:
+  other: 切换主题
+poweredBySome:
+  other: 由 {{ .Hugo }} 强力驱动 | 主题 - {{ .Theme }}
+# poweredBySome:
+#   other: ""
+valineLang:
+  other: zh-CN
+valinePlaceholder:
+  other: 你的评论 ...
+facebookLanguageCode:
+  other: zh_CN
+giscusLang:
+  other: zh-CN
+search:
+  other: 搜索
+searchPlaceholder:
+  other: 搜索文章标题或内容...
+clear:
+  other: 清空
+cancel:
+  other: 取消
+noResultsFound:
+  other: 没有找到结果
+lunrLanguageCode:
+  other: zh
+lunrLanguageLib:
+  other: lib/lunr/lunr.zh.js
+lunrSegmentitLib:
+  other: lib/lunr/lunr.segmentit.js
+copyToClipboard:
+  other: 复制到剪贴板
+cookieconsentMessage:
+  other: 本网站使用 Cookies 来改善您的浏览体验.
+cookieconsentDismiss:
+  other: 同意
+cookieconsentLink:
+  other: 了解更多
+shareOn:
+  other: 分享到
+contents:
+  other: 目录
+publishedOnDate:
+  other: 发布于 {{ .Date }}
+includedInCategories:
+  other: 收录于 {{ .Categories }}
+wordCount:
+  other: 约 {{ .Count }} 字
+readingTime:
+  other: 预计阅读 {{ .Count }} 分钟
+views:
+  other: 次阅读
+author:
+  other: 作者
+updatedOnDate:
+  other: 更新于 {{ .Date }}
+readMarkdown:
+  other: 阅读原始文档
+back:
+  other: 返回
+home:
+  other: 主页
+readMore:
+  other: 阅读全文
+pageNotFound:
+  other: 页面没找到
+pageNotFoundText:
+  other: 抱歉，您要查找的页面不存在。
+note:
+  other: 注意
+abstract:
+  other: 摘要
+info:
+  other: 信息
+tip:
+  other: 技巧
+success:
+  other: 成功
+question:
+  other: 问题
+warning:
+  other: 警告
+failure:
+  other: 失败
+danger:
+  other: 危险
+bug:
+  other: Bug
+example:
+  other: 示例
+quote:
+  other: 引用
+new:
+  other: 新增
+changed:
+  other: 更改
+deleted:
+  other: 删除

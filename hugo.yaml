@@ -1,0 +1,416 @@
+baseURL: https://MysticalDream.github.io/
+theme: LoveIt
+title: 幻梦的博客
+languageCode: zh-CN
+languageName: 简体中文
+hasCJKLanguage: true
+defaultContentLanguage: zh
+
+# enableGitInfo: true
+
+# 默认每页列表显示的文章数目
+paginate: 5
+
+# 是否使用 robots.txt
+enableRobotsTXT: true
+
+enableEmoji: true
+
+author:
+  name: MysticalDream
+  # email: ""
+  link: "https://github.com/MysticalDream"
+menu:
+  main:
+    - weight: 10
+      identifier: home
+      pre: ""
+      post: ""
+      name: 主页
+      url: /
+      title: ""
+    - weight: 20
+      identifier: posts
+      pre: ""
+      post: ""
+      name: 所有文章
+      url: /posts/
+      title: ""
+    - weight: 30
+      identifier: tags
+      pre: ""
+      post: ""
+      name: 标签
+      url: /tags/
+      title: ""
+    - weight: 21
+      identifier: categories
+      pre: ""
+      post: ""
+      name: 分类
+      url: /categories/
+      title: "" 
+    - weight: 60
+      identifier: about
+      pre: ""
+      post: ""
+      name: 关于
+      url: /about/
+      title: ""
+
+
+params:
+  defaultTheme: auto
+  gitRepo: "https://github.com/MysticalDream"
+  fingerprint: ""
+  dateFormat: 2006-01-02
+  title: 幻梦的博客
+  description: 用于记录和分享计算机技术，包括算法、计算机网络、编程语言等
+  images:
+    - /images/favicon.ico
+  header:
+    desktopMode: fixed
+    mobileMode: auto
+    title:
+      logo: "/images/avatar.jpg"
+      name: "幻梦的博客"
+      # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
+      # pre: ""
+      # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
+      # post: ""
+      typeit: false
+  footer:
+    enable: false
+    custom: ""
+    hugo: true
+    copyright: true
+    author: true
+    since: 2019
+    icp: ""
+    license: <a rel="license external nofollow noopener noreffer"
+      href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC
+      BY-NC 4.0</a>
+  section:
+    paginate: 20
+    dateFormat: 01-02
+    rss: 10
+  list:
+    paginate: 20
+    dateFormat: 01-02
+    rss: 10
+  app:
+    title: 幻梦的博客
+    noFavicon: false
+    svgFavicon: "/images/favicon.ico"
+    themeColor: "#ffffff"
+    iconColor: "#5bbad5"
+    tileColor: "#da532c"
+  search:
+    enable: true
+    # 搜索引擎的类型 ["lunr", "algolia"]
+    type: lunr
+    # 文章内容最长索引长度
+    contentLength: 4000
+    # 搜索框的占位提示语
+    placeholder: "输入关键词以检索内容"
+    #  最大结果数目
+    maxResultLength: 10
+    #  结果内容片段长度
+    snippetLength: 50
+    #  搜索结果中高亮部分的 HTML 标签
+    highlightTag: em
+    #  是否在搜索索引中使用基于 baseURL 的绝对路径
+    absoluteURL: false
+    # algolia:
+    #   index: ""
+    #   appID: ""
+    #   searchKey: ""
+  home:
+    rss: 10
+    profile:
+      enable: true
+      gravatarEmail: ""
+      avatarURL: /images/avatar.jpg
+      title: "幻梦的博客"
+      subtitle: 往事堪堪亦澜澜，前路漫漫亦灿灿
+      typeit: true
+      social: true
+      disclaimer: ""
+    posts:
+      enable: true
+      paginate: 6
+      defaultHiddenFromHomePage: false
+  social:
+    GitHub: MysticalDream
+    # Linkedin: ""
+    # Twitter: xxxx
+    # Instagram: xxxx
+    # Facebook: xxxx
+    # Telegram: xxxx
+    Medium: ""
+    Gitlab: ""
+    Youtubelegacy: ""
+    Youtubecustom: ""
+    Youtubechannel: ""
+    Tumblr: ""
+    Quora: ""
+    Keybase: ""
+    Pinterest: ""
+    Reddit: ""
+    Codepen: ""
+    FreeCodeCamp: ""
+    Bitbucket: ""
+    Stackoverflow: ""
+    Weibo: ""
+    Odnoklassniki: ""
+    VK: ""
+    Flickr: ""
+    Xing: ""
+    Snapchat: ""
+    Soundcloud: ""
+    Spotify: ""
+    Bandcamp: ""
+    Paypal: ""
+    Fivehundredpx: ""
+    Mix: ""
+    Goodreads: ""
+    Lastfm: ""
+    Foursquare: ""
+    Hackernews: ""
+    Kickstarter: ""
+    Patreon: ""
+    Steam: ""
+    Twitch: ""
+    Strava: ""
+    Skype: ""
+    Whatsapp: ""
+    Zhihu: ""
+    Douban: ""
+    Angellist: ""
+    Slidershare: ""
+    Jsfiddle: ""
+    Deviantart: ""
+    Behance: ""
+    Dribbble: ""
+    Wordpress: ""
+    Vine: ""
+    Googlescholar: ""
+    Researchgate: ""
+    Mastodon: ""
+    Thingiverse: ""
+    Devto: ""
+    Gitea: ""
+    XMPP: ""
+    Matrix: ""
+    Bilibili: ""
+    Discord: ""
+    DiscordInvite: ""
+    Lichess: ""
+    ORCID: ""
+    Pleroma: ""
+    Kaggle: ""
+    MediaWiki: ""
+    Plume: ""
+    HackTheBox: ""
+    RootMe: ""
+    Phone: ""
+    # Email: xxxx@xxxx.com
+    RSS: true
+  page:
+    # 是否在主页隐藏一篇文章
+    hiddenFromHomePage: false
+    # 是否在搜索结果中隐藏一篇文章
+    hiddenFromSearch: false
+    #  是否使用 twemoji
+    twemoji: false
+    # 是否使用 lightgallery
+    lightgallery: false
+    #  是否使用 ruby 扩展语法
+    ruby: true
+    #  是否使用 fraction 扩展语法
+    fraction: true
+    #  是否使用 fontawesome 扩展语法
+    fontawesome: true
+    # 是否在文章页面显示原始 Markdown 文档链接
+    linkToMarkdown: false
+
+    rssFullText: true
+
+    toc:
+      enable: true
+      keepStatic: false
+      auto: true
+    code:
+      copy: true
+      maxShownLines: 50
+    math:
+      enable: true
+      #  默认行内定界符是 $ ... $ 和 \( ... \)
+      # inlineLeftDelimiter: ""
+      # inlineRightDelimiter: ""
+      #  默认块定界符是 $$ ... $$, \[ ... \],  \begin{equation} ... \end{equation} 和一些其它的函数
+      # blockLeftDelimiter: ""
+      # blockRightDelimiter: ""
+      copyTex: true
+      # KaTeX 插件 mhchem
+      mhchem: true
+    # mapbox:
+    #   accessToken: ""
+    #   lightStyle: mapbox://styles/mapbox/light-v10?optimize=true
+    #   darkStyle: mapbox://styles/mapbox/dark-v10?optimize=true
+    #   navigation: true
+    #   geolocate: true
+    #   scale: true
+    #   fullscreen: true
+    share:
+      enable: true
+      Twitter: true
+      Facebook: true
+      Linkedin: false
+      Whatsapp: false
+      Pinterest: false
+      Tumblr: false
+      HackerNews: true
+      Reddit: false
+      VK: false
+      Buffer: false
+      Xing: false
+      Line: true
+      Instapaper: false
+      Pocket: false
+      Flipboard: false
+      Weibo: true
+      Blogger: false
+      Baidu: false
+      Odnoklassniki: false
+      Evernote: false
+      Skype: false
+      Trello: false
+      Mix: false
+    comment:
+      enable: true
+      giscus:
+        enable: true
+        repo: "MysticalDream/PBlog"
+        repoId: "R_kgDOKsZKxQ"
+        category: Announcements
+        categoryId: "DIC_kwDOKsZKxc4Ca4oE"
+        lang: "zh-CN"
+        mapping: pathname
+        reactionsEnabled: "1"
+        emitMetadata: "1"
+        inputPosition: top
+        lazyLoading: true
+        lightTheme: "preferred_color_scheme"
+        darkTheme: dark
+    # library:
+    #   css: {}
+    #   js: {}
+    # seo:
+    #   images: []
+    #   publisher:
+    #     name: ""
+    #     logoUrl: ""
+  typeit:
+    speed: 100
+    cursorSpeed: 1000
+    cursorChar: "|"
+    duration: -1
+  # verification:
+  #   google: ""
+  #   bing: ""
+  #   yandex: ""
+  #   pinterest: ""
+  #   baidu: ""
+  seo:
+    image: "/images/avatar.png"
+    thumbnailUrl: "/images/favicon.ico"
+  analytics:
+    enable: false
+    google:
+      id: ""
+      anonymizeIP: true
+    fathom:
+      id: ""
+      server: ""
+    plausible:
+      dataDomain: ""
+    yandexMetrica:
+      id: ""
+  # cookieconsent:
+  #   enable: true
+  #   content:
+  #     message: ""
+  #     dismiss: ""
+  #     link: ""
+  # CDN 数据文件名称, 默认不启用
+  # ["jsdelivr.yml"]
+  # 位于 "themes/LoveIt/assets/data/cdn/" 目录
+  # 可以在你的项目下相同路径存放你自己的数据文件:
+  # "assets/data/cdn/"  
+  # cdn:
+  #   data: ""
+
+  compatibility:
+    polyfill: false
+    objectFit: false
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    lineNumbersInTable: true
+    noClasses: false
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 1
+    endLevel: 6
+sitemap:
+  changefreq: weekly
+  filename: sitemap.xml
+  priority: 0.5
+Permalinks:
+  posts: ":year/:month/:filename"
+  # posts: :filename
+privacy:
+  # googleAnalytics: {}
+  twitter:
+    enableDNT: true
+  youtube:
+    privacyEnhanced: true
+mediaTypes:
+  text/plain:
+    suffixes:
+      - md
+outputFormats:
+  MarkDown:
+    mediaType: text/plain
+    isPlainText: true
+    isHTML: false
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+  page:
+    - HTML
+    - MarkDown
+  section:
+    - HTML
+    - RSS
+  taxonomy:
+    - HTML
+    - RSS
+  # taxonomyTerm:
+  #   - HTML
+
