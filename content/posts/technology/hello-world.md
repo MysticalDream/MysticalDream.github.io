@@ -1,6 +1,6 @@
 ---
 title: "[置顶] Hello World"
-date: 2023-10-24T00:00:00+08:00
+date: 2022-10-24T00:00:00+08:00
 draft: false
 weight: 1
 summary: "热爱技术，热爱分享" # 文章简单描述，会展示在主页
