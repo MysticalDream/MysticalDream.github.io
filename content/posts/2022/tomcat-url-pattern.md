@@ -48,8 +48,6 @@ tags:
 ---
 ## Servlet匹配规则（tomcat源码）
 
-{{% folder "tomcat匹配源码部分" %}}
-
 ```java
  private final void internalMapWrapper(ContextVersion contextVersion,
                                           CharChunk path,
@@ -254,7 +252,6 @@ tags:
     }
 ```
 
-{{% /folder %}}
 
 ##  分析
 >从源码结合注释可以看出servlet的匹配规则顺序是：
