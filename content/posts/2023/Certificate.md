@@ -176,6 +176,9 @@ CSR 是请求证书时向 CA 提供的公钥。 CA 将针对此特定请求颁�
 
 >服务器证书的 CN 必须与颁发者的域不同。 例如，在本例中，颁发者的 CN 是 Self Sign，服务器证书的 CN 是 localhost
 
+>注意: 本例是在本地运行服务的，所以subjectAltName可以配置为`subjectAltName = DNS:localhost,IP:127.0.0.1,IP:127.0.0.2`，如果你的服务不是运行在本地，而是其他域名或者IP的情况下需要根据你的情况修改，比如：
+>- 你的服务器IP为192.168.199.151，需要修改成为`subjectAltName = IP:192.168.199.151`
+>- 或者你使用的是域名，则需要修改成你自己的域名`subjectAltName = DNS:example.com`
 
 命令1：
 ```bash
