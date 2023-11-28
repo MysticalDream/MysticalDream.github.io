@@ -1,5 +1,5 @@
 ---
-title: "Java中的Integer.bitCount的浅析"
+title: "Java中的Integer.bitCount浅析"
 date: 2023-11-28T01:14:08+08:00
 draft: false
 
@@ -11,7 +11,7 @@ tags:
 - 算法
 ---
 
-# Java中的Integer.bitCount的浅析
+# Java中的Integer.bitCount浅析
 
 ## 问题
 
