@@ -303,9 +303,10 @@ params:
         lazyLoading: true
         lightTheme: "preferred_color_scheme"
         darkTheme: dark
-    # library:
-    #   css: {}
-    #   js: {}
+    library:
+      # css: {}
+      js:
+        someJavascript: js/D4W9LfDWOoJ0P0ABmi2O.js
     # seo:
     #   images: []
     #   publisher:
